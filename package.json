@@ -1,0 +1,59 @@
+{
+  "name": "nepalidate-picker-calendar",
+  
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Sagar Khadka",
+  "main": "./src/Calendar.tsx",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/sagarkhadka12345/NepaliDatePicker"
+  },
+  "scripts": {
+    "dev": "vite",
+    "prepack": "tsc && vite build",
+    "prepare": "tsc",
+    "build": "tsc && rollup -c",
+    "watch": "rollup -cw",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/node": "^20.9.0",
+    "luxon": "^3.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.4.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsc-hooks": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.3.4",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.5"
+  }
+}
